@@ -1,0 +1,121 @@
+ /* Universal selector --> *  -> sap par property lgani ho to issse use kro   */
+ /* user agent stylesheet -> browserr styling */
+
+ body{
+     /* border:1px solid red  */
+     margin: 0px;
+ }
+.header-container{
+    border:1px solid black;
+    /* rem -> measurement unit in css to measure height,widht etc */
+    height: 5.2rem;
+    background-color: #333;
+    display: flex;
+    /* justify-content: c; */
+    align-items: center;
+    /* padding is used to make space inside a element */
+    padding-left: 3rem ;
+}
+.header-container>*{
+    background-color: #454444;
+    height: 65%;
+    border-radius: 6px;
+    display: flex;
+    /* margin-right is used to make space b/w to close elements */
+    margin-right: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.color{
+    width: 15%;
+    height: 50%;
+    border-radius: 6px;
+}
+.pink{
+    background-color: lightpink;
+    /* width: 10%; */
+    /* border-radius: 6px; */
+}
+.blue{
+    background-color: lightblue;
+}
+.green{
+    background-color: lightgreen;
+}
+.black{
+    background-color: black;
+}
+.color-group_container{
+    /* relative unit which derived it's value form the parent */
+    width: 30%;
+    margin-right: 3rem;
+}
+/* ********************* ADD PLUS AND CROSS ******************** */
+.add-cross_container{
+    /* background-color: aliceblue; */
+    width: 20%;
+    display: flex;
+}
+.add-cross_container>*{
+    width: 50%;
+     height: 100%;
+     background-color: red;
+    
+}
+.plus{
+    background-color: yellow;
+    /* width: 50%; */
+    /* height: 100%; */
+}
+.plus,.cross{
+    /* perfectly center an element inside a div 
+  ---> interview Ques : How to align things in center inside a div */
+  
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-plus,.fa-times{
+    font-size: 2rem;    
+    /* boldness */
+    font-weight: 400;
+}
+.task_input{
+    color: white;
+}
+
+
+
+
+
+/* ********************** MAIN CONTAINER ******************* */
+.main-container{
+    /* border:1px solid blue */
+    /* 
+    vh ,vw -> to set height and width
+    100% width of the visible screen -> 100vw;
+    100% height of the visible screen -> 100vh;
+    */
+    height: calc(100vh - 5.2rem);
+    background-color: #f2f2f2;
+    padding: 4rem;
+
+}
+.task_container{
+    border: 1px solid black;
+    height: 8rem;
+    width: 13rem;
+}
+.task_main-container{
+    padding: 0.5rem;
+}
+.task_header{
+    height: 0.5rem;
+    background-color: black;
+}
+.task_id{
+    color: grey;
+    margin: 0.2rem;
+    margin-left: 0px;
+}
