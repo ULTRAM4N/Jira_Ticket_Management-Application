@@ -60,14 +60,14 @@
 .add-cross_container>*{
     width: 50%;
      height: 100%;
-     background-color: red;
+     /* background-color: red; */
     
 }
-.plus{
-    background-color: yellow;
+/* .plus{ */
+    /* background-color: yellow; */
     /* width: 50%; */
     /* height: 100%; */
-}
+/* } */
 .plus,.cross{
     /* perfectly center an element inside a div 
   ---> interview Ques : How to align things in center inside a div */
@@ -100,7 +100,10 @@
     height: calc(100vh - 5.2rem);
     background-color: #f2f2f2;
     padding: 4rem;
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .task_container{
     border: 1px solid black;
@@ -112,7 +115,7 @@
 }
 .task_header{
     height: 0.5rem;
-    background-color: black;
+    /* background-color: black; */
 }
 .task_id{
     color: grey;
